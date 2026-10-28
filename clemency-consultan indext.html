@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CLEMENCY CONSULTANT | Websites, CRM and AI Chatbots</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAFAF7;--surface:#FFFFFF;--mint:#D1FAE5;--teal:#0F766E;--amber:#F59E0B;--navy:#0B2545;--text:#0B2545;--muted:#4B5B6B;--line:#E3E8E4;--onteal:#FAFAF7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1620;--surface:#112331;--mint:#123A36;--teal:#2DD4BF;--navy:#E8F1F0;--text:#E8F1F0;--muted:#9FB3BF;--line:#1E3544;--onteal:#06201D;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1620;--surface:#112331;--mint:#123A36;--teal:#2DD4BF;--navy:#E8F1F0;--text:#E8F1F0;--muted:#9FB3BF;--line:#1E3544;--onteal:#06201D;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65;font-size:16px}
+h1,h2,h3{font-family:Poppins,Inter,sans-serif;font-weight:600;line-height:1.2;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Poppins,sans-serif;font-weight:600;letter-spacing:.06em;font-size:15px}
+.brand small{display:block;color:var(--teal);font-size:10px;letter-spacing:.3em;font-weight:500}
+.links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+.btn{display:inline-block;background:var(--amber);color:#0B2545;font-weight:500;padding:12px 22px;border-radius:999px;font-size:15px;border:0}
+.btn.alt{background:transparent;border:1.5px solid var(--teal);color:var(--teal)}
+.hero{padding:64px 0 56px}
+.hero .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--mint);color:var(--teal);font-size:13px;font-weight:500;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(30px,5vw,48px)}
+h1 span{color:var(--teal)}
+.hero p{color:var(--muted);font-size:18px;margin:18px 0 26px;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+.mock .row{display:flex;gap:10px;margin-bottom:12px}
+.bub{padding:10px 14px;border-radius:14px;font-size:14px;max-width:85%}
+.bub.l{background:var(--mint);color:var(--text)}
+.bub.r{background:var(--teal);color:var(--onteal);margin-left:auto}
+.stat{display:flex;justify-content:space-between;border-top:1px solid var(--line);margin-top:14px;padding-top:14px;font-size:13px;color:var(--muted)}
+.stat b{display:block;font-family:Poppins,sans-serif;font-size:20px;color:var(--teal)}
+section{padding:56px 0}
+section.tint{background:var(--mint)}
+.eyebrow{color:var(--teal);font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(26px,4vw,34px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:620px;margin:0 0 32px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.ico{width:42px;height:42px;border-radius:12px;background:var(--mint);color:var(--teal);display:flex;align-items:center;justify-content:center;font-family:Poppins,sans-serif;font-weight:600;margin-bottom:14px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card.wide{grid-column:1/-1;display:flex;gap:20px;align-items:center;flex-wrap:wrap}.card.wide .ico{margin-bottom:0}.card.wide .txt{flex:1;min-width:240px}.bars{display:flex;align-items:flex-end;gap:6px;height:48px}.bars i{display:block;width:12px;border-radius:3px;background:var(--amber)}
+.step b{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--amber);color:#0B2545;align-items:center;justify-content:center;font-family:Poppins,sans-serif;margin-bottom:12px}
+.pkg.feat{border:2px solid var(--teal)}
+.pkg ul{padding-left:18px;margin:12px 0 0;color:var(--muted);font-size:15px}
+.pkg li{margin-bottom:6px}
+.pill{font-size:12px;background:var(--amber);color:#0B2545;border-radius:999px;padding:3px 10px;margin-left:6px;font-weight:500}
+.contact{background:var(--teal);color:var(--onteal);border-radius:20px;padding:40px 28px;text-align:center}
+.contact h2{color:var(--onteal)}
+.contact p{margin:0 auto 22px;max-width:520px;opacity:.95}
+.contact .cta{justify-content:center}
+.contact .btn.alt{border-color:var(--onteal);color:var(--onteal)}
+footer{padding:28px 0 36px;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:760px){.hero .grid{grid-template-columns:1fr}.links{display:none}.hero{padding-top:40px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top" aria-label="CLEMENCY CONSULTANT home">
+<svg width="38" height="38" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#D1FAE5"/><path d="M 78 29 A 36 36 0 1 0 78 71" fill="none" stroke="#0F766E" stroke-width="11" stroke-linecap="round"/><rect x="37" y="52" width="7" height="12" rx="2" fill="#F59E0B"/><rect x="47" y="44" width="7" height="20" rx="2" fill="#F59E0B"/><rect x="57" y="34" width="7" height="30" rx="2" fill="#F59E0B"/></svg>
+<span>CLEMENCY<small>CONSULTANT</small></span></a>
+<nav class="links"><a href="#services">Services</a><a href="#process">How it works</a><a href="#packages">Packages</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#contact">Free audit</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap grid">
+<div>
+<span class="tag">Websites, CRM and AI for growing businesses</span>
+<h1>Never miss another customer. <span>Grow with care.</span></h1>
+<p>CLEMENCY CONSULTANT builds fast websites, organised CRM systems and AI chatbots that capture every lead, reply in seconds and follow up automatically, so you can focus on running your business.</p>
+<div class="cta"><a class="btn" href="#contact">Book a free audit</a><a class="btn alt" href="#services">See our services</a></div>
+</div>
+<div class="card mock" aria-label="Example chatbot conversation">
+<div class="row"><div class="bub r">Hi, do you have space for Monday?</div></div>
+<div class="row"><div class="bub l">Yes, we do. Would 10am or 2pm suit you better?</div></div>
+<div class="row"><div class="bub r">2pm please.</div></div>
+<div class="row"><div class="bub l">Booked. A confirmation is on its way.</div></div>
+<div class="stat"><span><b>24/7</b>Replies</span><span><b>Instant</b>Follow up</span><span><b>0</b>Missed leads</span></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="eyebrow">What we do</div>
+<h2>Everything you need to turn visitors into customers</h2>
+<p class="lead">Five connected services that work together, built around the way your business actually runs.</p>
+<div class="cols">
+<div class="card"><div class="ico">W</div><h3>Website design and fixes</h3><p>Clear, fast, mobile friendly websites built to turn visitors into enquiries, plus fixes for sites that are losing leads.</p></div>
+<div class="card"><div class="ico">C</div><h3>CRM setup and management</h3><p>GoHighLevel pipelines, automations and reports, so every lead is tracked from first contact to paying customer.</p></div>
+<div class="card"><div class="ico">AI</div><h3>AI chatbots</h3><p>Assistants that answer questions, qualify leads and book appointments around the clock on your website and messages.</p></div>
+<div class="card"><div class="ico">F</div><h3>Follow up automation</h3><p>Text and email sequences that keep in touch, so no enquiry goes cold and no customer feels ignored.</p></div>
+<div class="card wide"><div class="ico">D</div><div class="txt"><h3>Dashboard development and activity tracking</h3><p>Custom dashboards that show your leads, sales, bookings and team activities in one clear view, so you always know what is happening in your business.</p></div><div class="bars" aria-hidden="true"><i style="height:16px"></i><i style="height:26px"></i><i style="height:38px"></i><i style="height:48px"></i></div></div>
+</div></div></section>
+
+<section id="process" class="tint"><div class="wrap">
+<div class="eyebrow">How it works</div>
+<h2>Simple, clear and fast to start</h2>
+<p class="lead">No long contracts to decode and no confusing jargon. Here is what happens when we work together.</p>
+<div class="cols">
+<div class="card step"><b>1</b><h3>Free audit</h3><p>We review your website and lead handling, then show you exactly where enquiries are being lost.</p></div>
+<div class="card step"><b>2</b><h3>Build and connect</h3><p>We fix your site, set up your CRM and launch your chatbot and follow up automations.</p></div>
+<div class="card step"><b>3</b><h3>Grow and improve</h3><p>We track results, manage the system for you and keep improving what brings in customers.</p></div>
+</div></div></section>
+
+<section id="packages"><div class="wrap">
+<div class="eyebrow">Packages</div>
+<h2>Pick the level of help that fits</h2>
+<p class="lead">Every package starts with a free audit. Message us for a quote that matches your business.</p>
+<div class="cols">
+<div class="card pkg"><h3>Starter</h3><p>For businesses that need a stronger first impression.</p><ul><li>Website audit and fixes</li><li>Lead capture forms</li><li>Basic follow up</li></ul></div>
+<div class="card pkg feat"><h3>Growth<span class="pill">Popular</span></h3><p>For businesses ready to organise and automate leads.</p><ul><li>Everything in Starter</li><li>CRM pipeline setup</li><li>Automated text and email follow up</li></ul></div>
+<div class="card pkg"><h3>Full Service</h3><p>For businesses that want it all handled.</p><ul><li>Everything in Growth</li><li>AI chatbot on your site</li><li>Custom dashboard and activity tracking</li><li>Monthly reports and ongoing management</li></ul></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<div class="contact">
+<h2>Ready to stop losing leads?</h2>
+<p>Send us your website and we will send back a free audit showing what to fix first. No pressure and no obligation.</p>
+<div class="cta"><a class="btn" href="mailto:arikuyeribayobenjaman@gmail.com?subject=Free%20audit%20request">Email us</a><a class="btn alt" href="tel:+2349013021756">Call 09013021756</a></div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">CLEMENCY CONSULTANT &middot; Osogbo, Nigeria &middot; Working with businesses everywhere<br>arikuyeribayobenjaman@gmail.com</div></footer>
+</body>
+</html>
